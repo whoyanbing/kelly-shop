@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="slide-bar">
+    <scroll-view style="height:100vh;" scroll-y>
+      <van-sidebar active-key="{{ categoryIndex }}" bind:change="onChange">
+        <van-sidebar-item wx:for="{{categoryList}}" wx:key="index" title="{{item.label}}" />
+      </van-sidebar>
+    </scroll-view>
+  </view>
+  <view class="slide-content">
+    <scroll-view style="height:100vh;" scroll-y>
+      <van-grid column-num="3">
+        <van-grid-item url="/pages/productList/index" icon="{{item.icon}}" text="{{item.label}}" wx:for="{{ subCategoryList }}" wx:key="index" />
+      </van-grid>
+    </scroll-view>
+  </view>
+</view>

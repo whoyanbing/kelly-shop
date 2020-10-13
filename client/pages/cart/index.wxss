@@ -1,0 +1,46 @@
+page {
+	background-color: #fafafa;
+}
+
+.container {
+	background-color: #fafafa;
+}
+
+.delete-btn {
+	background-color: #ee0a24;
+	width: 160rpx;
+	height: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-goods {
+	background-color: #fafafa;
+}
+
+.card-goods__item {
+	position: relative;
+	background-color: #fafafa;
+	--checkbox-checked-icon-color: #ee0a24;
+}
+
+.card-goods__item .van-checkbox__label {
+	width: 100%;
+	height: auto;
+	padding: 0 10px 0 20px;
+	box-sizing: border-box;
+}
+
+.card-goods__item .van-checkbox__icon {
+	top: 50%;
+	left: 10px;
+	z-index: 1;
+	position: absolute;
+	margin-top: -10px;
+}
+
+.card-goods__item .van-card__price {
+	color: #f44;
+}

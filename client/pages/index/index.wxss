@@ -1,0 +1,21 @@
+.contianer {
+	width: 750rpx;
+}
+
+.swiper-container {
+	height: 360rpx;
+	width: 100%;
+}
+
+.notice-bar {
+	margin: 20rpx 0;
+}
+
+.product-item {
+	margin: 0 0 20rpx;
+}
+
+.van-cell__title,
+.van-cell__value {
+	color: #ee0a24;
+}

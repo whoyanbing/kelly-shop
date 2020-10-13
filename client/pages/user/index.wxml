@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="userInfo">
+    <view class="user-avatar">
+      <open-data type="userAvatarUrl" lang="en" />
+    </view>
+    <view class="user-nickname">
+      <open-data type="userNickName" />
+    </view>
+  </view>
+  <van-row class="user-links">
+    <van-col span="6">
+      <van-icon name="pending-payment" />
+      待付款
+    </van-col>
+    <van-col span="6">
+      <van-icon info="4" name="tosend" />
+      待发货
+    </van-col>
+    <van-col span="6">
+      <van-icon name="logistics" />
+      待收货
+    </van-col>
+    <van-col span="6">
+      <van-icon name="comment-o" />
+      待评价
+    </van-col>
+  </van-row>
+  <van-cell-group class="user-group">
+    <van-cell icon="records" title="全部订单" is-link />
+  </van-cell-group>
+  <van-cell-group>
+    <van-cell icon="points" title="我的积分" is-link />
+    <van-cell icon="gift-o" title="我的分销" is-link />
+    <van-cell icon="gold-coin-o" title="我的优惠券" is-link />
+  </van-cell-group>
+</view>

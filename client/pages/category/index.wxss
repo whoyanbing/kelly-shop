@@ -1,0 +1,18 @@
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	background-color: #fafafa;
+}
+
+.slide-bar {
+	height: 100vh;
+	width: 200rpx;
+	border-right: 2rpx solid #e6e6e6;
+}
+
+.slide-content {
+	height: 100vh;
+	flex: 1;
+}

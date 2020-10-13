@@ -1,0 +1,9 @@
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <navigator url="/pages/product/index?id={{item.id}}">
+        <image class="swiper-img" mode="aspectFill" src="/images/1.jpg" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>

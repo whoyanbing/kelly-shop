@@ -1,0 +1,9 @@
+.commodity-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.commodity-item-img {
+	height: 100rpx;
+	width: 100rpx;
+}

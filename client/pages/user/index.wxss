@@ -1,0 +1,42 @@
+.userInfo {
+	height: 350rpx;
+	width: 750rpx;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	background-color: #ee0a24;
+	border-radius: 0 0 50rpx 50rpx;
+}
+
+.user-avatar {
+	height: 140rpx;
+	width: 140rpx;
+	border-radius: 50%;
+	border: 8rpx solid #fff;
+	overflow: hidden;
+	justify-content: center;
+	margin: 0 20rpx;
+}
+
+.user-nickname {
+	width: 200rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.user-links {
+	padding: 30rpx 0;
+	font-size: 24rpx;
+	text-align: center;
+	background-color: #fff;
+}
+
+.user-links .van-icon {
+	display: block;
+	font-size: 80rpx;
+}
+
+.user-links .van-row {
+	padding: 30rpx 0;
+}

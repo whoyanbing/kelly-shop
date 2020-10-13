@@ -1,0 +1,12 @@
+<view wx:if="{{false}}" class="container">
+  <van-checkbox-group class="card-goods" value="{{ checkedGoods }}" bind:change="onChange">
+    <van-checkbox class="card-goods__item" wx:for="{{ goods }}" wx:key="index" name="{{ item.id }}">
+      <van-swipe-cell right-width="{{ 80 }}">
+        <van-card title="{{ item.title }}" desc="{{ item.desc }}" num="{{ item.num }}" price="{{ item.formatPrice }}" thumb="{{ item.thumb }}" />
+        <view class="delete-btn" slot="right">删除</view>
+      </van-swipe-cell>
+    </van-checkbox>
+  </van-checkbox-group>
+  <van-submit-bar price="{{ totalPrice }}" disabled="{{ !checkedGoods.length }}" button-text="{{ submitBarText }}" bind:submit="onSubmit"></van-submit-bar>
+</view>
+<van-empty wx:else image="/images/3-001.png" description="您还没有添加商品" />

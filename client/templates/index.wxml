@@ -1,0 +1,9 @@
+<!-- 商品模板 -->
+<template name="commodityItem">
+  <view class="commodity-item">
+    <image class="commodity-item-img" src="/images/1.jpg" />
+    <view class="commodity-item-label">天气丹....</view>
+    <view class="commodity-item-price">¥12000</view>
+    <view class="commodity-item-del-price">¥13000</view>
+  </view>
+</template>
