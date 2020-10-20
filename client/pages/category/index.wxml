@@ -2,14 +2,14 @@
   <view class="slide-bar">
     <scroll-view style="height:100vh;" scroll-y>
       <van-sidebar active-key="{{ categoryIndex }}">
-        <van-sidebar-item wx:for="{{categoryList}}" data-id="{{item.category_id}}" bind:click="onChange" wx:key="index" title="{{item.category_name}}" />
+        <van-sidebar-item wx:for="{{categoryList}}" bind:click="onChange" wx:key="index" title="{{item.category_name}}" />
       </van-sidebar>
     </scroll-view>
   </view>
   <view class="slide-content">
     <scroll-view style="height:100vh;" scroll-y>
       <van-grid column-num="3">
-        <van-grid-item url="/pages/productList/index" icon="{{item.icon}}" text="{{item.category_name}}" wx:for="{{ subCategoryList }}" wx:key="index" />
+        <van-grid-item url="/pages/productList/index" icon="{{item.icon}}" text="{{item.name}}" wx:for="{{ categoryList[categoryIndex].subCategory }}" wx:key="index" />
       </van-grid>
     </scroll-view>
   </view>

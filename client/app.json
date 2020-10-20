@@ -5,7 +5,8 @@
     "pages/cart/index",
     "pages/user/index",
     "pages/product/index",
-    "pages/productList/index"
+    "pages/productList/index",
+    "pages/order/index"
   ],
   "entryPagePath":"pages/index/index",
   "window": {

@@ -9,4 +9,4 @@
   </van-checkbox-group>
   <van-submit-bar price="{{ totalPrice }}" disabled="{{ !checkedGoods.length }}" button-text="{{ submitBarText }}" bind:submit="onSubmit"></van-submit-bar>
 </view>
-<van-empty wx:else image="/images/3-001.png" description="您还没有添加商品" />
+<van-empty wx:else description="您还没有添加商品" />

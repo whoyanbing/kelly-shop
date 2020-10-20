@@ -5,29 +5,19 @@ Page({
 	 */
 	data: {
 		categoryList: [],
-		subCategoryList: [],
 		categoryIndex: 0,
 	},
 	onChange(e) {
-		const id = e.currentTarget.dataset.id
-		this.getSubCategoryList(id)
+		this.setData({
+			categoryIndex:e.detail
+		})
 	},
 	getCategoryList() {
 		const db = wx.cloud.database()
 		db.collection('category').get().then(res => {
+			console.log(res)
 			this.setData({
 				categoryList: res.data
-			})
-			this.getSubCategoryList(res.data[0].category_id)
-		})
-	},
-	getSubCategoryList(id) {
-		const db = wx.cloud.database()
-		db.collection('category').where({
-			category_id: id
-		}).get().then(res => {
-			this.setData({
-				subCategoryList: res.data
 			})
 		})
 	},
