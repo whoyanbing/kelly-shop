@@ -5,18 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swiperList: [{
-      imgUrl: '/images/promotionBg.png',
-      id: '1'
-    },
-    {
-      imgUrl: '/images/promotionBg.png',
-      id: '2'
-    },
-    {
-      imgUrl: '/images/promotionBg.png',
-      id: '3'
-    }],
+    swiperList: [],
     menuList: [{
       label: '护肤',
       icon: '/images/menu1.png'
@@ -35,11 +24,23 @@ Page({
     }]
   },
 
+  getBannerList() {
+    const db = wx.cloud.database()
+    db.collection('banner').get().then(res => {
+      console.log(res) 
+      if (res.errMsg == 'collection.get:ok') {
+        this.setData({
+          swiperList: res.data
+        })
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getBannerList()
   },
 
   /**

@@ -24,6 +24,7 @@ App({
         fromId
       }
     }).then(res => {
+      console.log(res)
       wx.setStorageSync('openid', res.result.openid)
       wx.setStorageSync('fromId', fromId)
     })

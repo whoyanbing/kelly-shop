@@ -13,11 +13,11 @@ cloud.init({
 exports.main = async (data) => {
   const db = cloud.database()
   const wxContext = cloud.getWXContext()
-  const userExists = await db.collection('users').where({
+  const userExists = await db.collection('user').where({
     openid: wxContext.OPENID
   }).get()
   if (userExists.data.length == 0) {
-    const res = await db.collection('users').add({
+    const res = await db.collection('user').add({
       data: {
         openid: wxContext.OPENID,
         create_time: new Date(),

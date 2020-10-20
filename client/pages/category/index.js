@@ -4,47 +4,39 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-		categoryList: [{
-			id: '2121',label: '全部商品',
-		},
-		{
-			id: '2121',label: '护肤',
-		},
-		{
-			id: '2121',label: '香水',
-		},
-		{
-			id: '2121',label: '洗护',
-		},
-		{
-			id: '2121',label: '彩妆',
-		},
-		{
-			id: '2121',label: '面膜',
-		}],
-		subCategoryList: [{
-			label:'护肤套装',icon: '/images/1-001.png',
-		},
-		{
-			label:'防晒隔离',icon: '/images/1-001.png',
-		},
-		{
-			label:'男士护肤', icon: '/images/1-001.png',
-		},
-		{
-			label:'水乳面霜',icon: '/images/1-001.png',
-		}],
+		categoryList: [],
+		subCategoryList: [],
 		categoryIndex: 0,
 	},
-	onChange(event) {
-		this.setData({
-			categoryIndex: event.detail
+	onChange(e) {
+		const id = e.currentTarget.dataset.id
+		this.getSubCategoryList(id)
+	},
+	getCategoryList() {
+		const db = wx.cloud.database()
+		db.collection('category').get().then(res => {
+			this.setData({
+				categoryList: res.data
+			})
+			this.getSubCategoryList(res.data[0].category_id)
 		})
-  },
+	},
+	getSubCategoryList(id) {
+		const db = wx.cloud.database()
+		db.collection('category').where({
+			category_id: id
+		}).get().then(res => {
+			this.setData({
+				subCategoryList: res.data
+			})
+		})
+	},
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
-	onLoad: function (res) {},
+	onLoad: function (res) {
+		this.getCategoryList()
+	},
 	/**
 	 * 生命周期函数--监听页面初次渲染完成
 	 */
