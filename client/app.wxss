@@ -1,10 +1,5 @@
 @import '/miniprogram_npm/@vant/weapp/common/index.wxss';
 
-.container {
-	display: flex;
-	flex-direction: column;
-}
-
 swiper {
 	height: inherit;
 }

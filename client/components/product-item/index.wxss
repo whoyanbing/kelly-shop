@@ -1,0 +1,35 @@
+.product-item {
+	width: 670rpx;
+	height: 800rpx;
+	margin: 30rpx 0;
+	position: relative;
+}
+
+.product-img {
+	border-radius: 20rpx;
+}
+
+.swiper-image {
+	height: 100%;
+	width: 100%;
+	border-radius: 20rpx;
+}
+
+.product-info-btn {
+	height: 700rpx;
+	position: absolute;
+	right: 30rpx;
+	bottom: 50rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: white;
+}

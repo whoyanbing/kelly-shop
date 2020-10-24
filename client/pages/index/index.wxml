@@ -1,23 +1,7 @@
 <view class="container">
-  <view class="swiper-container">
-    <swiper imgUrls="{{ swiperList }}"></swiper>
-  </view>
-  <view class="notice-bar">
-    <van-notice-bar speed="30" left-icon="volume-o" text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。" />
-  </view>
-  <van-grid border="{{false}}" column-num="4">
-    <block wx:for="{{menuList}}" wx:key="index">
-      <van-grid-item icon="{{item.icon}}" text="{{item.label}}" url="/pages/productList/index" />
-    </block>
-  </van-grid>
-  <van-cell icon="/images/hot.png" border="{{false}}" title="热门商品"></van-cell>
   <view class="product-list">
-    <view wx:for="{{4}}" wx:key="index" class="product-item">
-      <van-card thumb-link="/pages/product/index" tag="标签" price="10.00" origin-price="12.00" desc="描述信息" title="商品标题" thumb="/images/1.jpg">
-        <view slot="footer">
-          <van-button size="mini" icon="shopping-cart-o" type="danger" />
-        </view>
-      </van-card>
+    <view wx:for="{{productList}}" wx:key="index" class="product-item">
+      <product-item product-info="{{item}}"></product-item>
     </view>
   </view>
 </view>

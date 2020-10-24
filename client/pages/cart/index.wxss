@@ -44,3 +44,8 @@ page {
 .card-goods__item .van-card__price {
 	color: #f44;
 }
+
+.bottom-button {
+	width: 160px;
+	height: 40px;
+}

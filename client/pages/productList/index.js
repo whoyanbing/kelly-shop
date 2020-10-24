@@ -17,6 +17,12 @@ Page({
     ],
     value1: 0,
     value2: 'a',
+    productList: [
+      {id: '111',introduce: '这是介绍1',image: ['cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-meat@1.png','cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-meat@2.png']},
+      {id: '222',introduce: '这是介绍2',image: ['cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-meat@2.png']},
+      {id: '333',introduce: '这是介绍3',image: ['cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-meat@3.png']},
+      {id: '444',introduce: '这是介绍4',image: ['cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-nux@1.png']},
+    ]
   },
 
   /**

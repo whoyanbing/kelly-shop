@@ -1,9 +1,0 @@
-.swiper {
-	height: 360rpx;
-	width: 750rpx;
-}
-
-.swiper-img {
-	width: 100%;
-	height: 360rpx;
-}

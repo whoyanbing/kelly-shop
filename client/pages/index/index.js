@@ -5,23 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swiperList: [],
-    menuList: [{
-      label: '护肤',
-      icon: '/images/menu1.png'
-    },
-    {
-      label: '美妆',
-      icon: '/images/menu2.png'
-    },
-    {
-      label: '分销',
-      icon: '/images/menu3.png'
-    },
-    {
-      label: '秒杀',
-      icon: '/images/menu4.png'
-    }]
+    productList: [
+      {id: '111',introduce: '这是介绍1',image: ['cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-meat@1.png','cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-meat@2.png']},
+      {id: '222',introduce: '这是介绍2',image: ['cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-meat@2.png']},
+      {id: '333',introduce: '这是介绍3',image: ['cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-meat@3.png']},
+      {id: '444',introduce: '这是介绍4',image: ['cloud://whoyanbing-zxhpb.7768-whoyanbing-zxhpb-1301101164/product/product-nux@1.png']},
+    ]
   },
 
   getBannerList() {

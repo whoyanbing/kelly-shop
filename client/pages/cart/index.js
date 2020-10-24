@@ -73,4 +73,8 @@ Page({
       icon: 'none'
     });
   },
+
+  onClickBtn() {
+    
+  }
 });
