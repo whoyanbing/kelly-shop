@@ -1,11 +1,7 @@
 {
   "usingComponents": {
     "product-item": "/components/product-item/index",
-    "van-notice-bar": "@vant/weapp/notice-bar/index",
-    "van-grid": "@vant/weapp/grid/index",
-    "van-grid-item": "@vant/weapp/grid-item/index",
-    "van-card": "@vant/weapp/card/index",
-    "van-button": "@vant/weapp/button/index",
-    "van-cell": "@vant/weapp/cell/index"
+    "van-divider": "@vant/weapp/divider/index",
+    "van-loading": "@vant/weapp/loading/index"
   }
 }

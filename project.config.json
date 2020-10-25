@@ -48,17 +48,10 @@
   "simulatorPluginLibVersion": {},
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
     "game": {
-      "currentL": -1,
       "list": []
     },
     "gamePlugin": {
@@ -85,6 +78,11 @@
           "name": "pages/index/index",
           "pathName": "pages/index/index",
           "query": "fromId=o11IM0RV1JWDOWDwepaqBvhQDbq0",
+          "scene": null
+        },
+        {
+          "name": "购物车",
+          "pathName": "pages/cart/index",
           "scene": null
         }
       ]

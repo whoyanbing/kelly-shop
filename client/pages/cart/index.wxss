@@ -1,48 +1,46 @@
-page {
-	background-color: #fafafa;
-}
-
 .container {
 	background-color: #fafafa;
-}
-
-.delete-btn {
-	background-color: #ee0a24;
-	width: 160rpx;
-	height: 100%;
-	color: white;
+	width: 750rpx;
+	padding-bottom: 100rpx;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 }
 
-.card-goods {
-	background-color: #fafafa;
+.cart-manage {
+	width: 690rpx;
+	height: 100rpx;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 32rpx;
 }
 
-.card-goods__item {
-	position: relative;
-	background-color: #fafafa;
-	--checkbox-checked-icon-color: #ee0a24;
+.product-list {
+	width: 690rpx;
 }
 
-.card-goods__item .van-checkbox__label {
-	width: 100%;
-	height: auto;
-	padding: 0 10px 0 20px;
-	box-sizing: border-box;
+.product-item {
+	margin: 0 0 20rpx;
 }
 
-.card-goods__item .van-checkbox__icon {
-	top: 50%;
-	left: 10px;
-	z-index: 1;
-	position: absolute;
-	margin-top: -10px;
+.product-info {
+	display: flex;
 }
 
-.card-goods__item .van-card__price {
-	color: #f44;
+.product-detail {
+	width: 380rpx;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	font-size: 30rpx;
+	padding-left: 50rpx;
+}
+
+.submit-bar {
+	width: 750rpx;
+	height: 200rpx;
 }
 
 .bottom-button {

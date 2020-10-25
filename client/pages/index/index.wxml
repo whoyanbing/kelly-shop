@@ -4,4 +4,10 @@
       <product-item product-info="{{item}}"></product-item>
     </view>
   </view>
+  <view class="hard-line">
+    <van-divider hairline customStyle="color: #969799; border-color: #969799; font-size: 14px;" contentPosition="center">
+      <van-loading type="spinner" wx:if="{{loadMore}}" size="20px">加载中...</van-loading>
+      <block wx:if="{{loadAll}}">我是有底线的</block>
+    </van-divider>
+  </view>
 </view>
