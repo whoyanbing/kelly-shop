@@ -2,15 +2,14 @@
   <swiper indicator-dots="{{productInfo.image.length >1}}" autoplay="{{productInfo.image.length >1}}">
     <block wx:for="{{productInfo.image}}" wx:key="index">
       <swiper-item>
-        <image class="swiper-image" src="{{item}}" />
+        <image class="swiper-image" data-id="{{productInfo.id}}" bind:tap="bindProductDetail" src="{{item}}" />
       </swiper-item>
     </block>
   </swiper>
   <view class="product-info-btn">
     <van-icon name="info-o" size="80rpx" bind:click="onClickShow" />
-    <van-icon name="share-o" size="80rpx" />
-    <van-icon name="like-o" size="80rpx" bind:click="onClickLike" />
-    <van-icon name="cart-o" size="80rpx" bind:click="onClickCart" />
+    <!-- <van-icon name="like-o" size="80rpx" bind:click="onClickLike" /> -->
+    <!-- <van-icon name="cart-o" size="80rpx" bind:click="onClickCart" /> -->
   </view>
   <van-overlay show="{{ showInfo }}" bind:click="onClickHide">
     <view class="wrapper">{{productInfo.introduce}}</view>

@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="product-info">
+    <swiper indicator-dots="{{productInfo.image.length>1}}" autoplay="{{true}}">
+      <block wx:for="{{productInfo.image}}" wx:key="index">
+        <swiper-item>
+          <image class="swiper-image" src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="product-detail">
+    <van-cell value="库存{{productInfo.count}}">
+      <view slot="title">
+        <view style="color:#ee0a24;font-size:40rpx;">¥{{productInfo.price/100}}</view>
+      </view>
+    </van-cell>
+    <van-cell title="购买数量">
+      <van-stepper integer max="{{productInfo.limit}}" value="{{ number }}" bind:change="onCountChange" />
+    </van-cell>
+  </view>
+  <van-goods-action>
+    <van-goods-action-icon open-type="contact" icon="chat-o" text="客服" />
+    <van-goods-action-icon open-type="share" icon="share-o" text="分享" />
+    <van-goods-action-icon icon="cart-o" info="{{cartItems.length>0?cartItems.length:''}}" text="购物车" bind:click="onClickCart" />
+    <van-goods-action-button disabled="{{productExist}}" text="加入购物车" type="danger" bind:click="onClickAddCart" />
+  </van-goods-action>
+</view>

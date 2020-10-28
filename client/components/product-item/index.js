@@ -43,6 +43,13 @@ Component({
     // 加入购物车
     onClickCart() {
       console.log('加入购物车')
+    },
+    // 去到详情页
+    bindProductDetail(e) {
+      const id = e.currentTarget.dataset.id
+      wx.navigateTo({
+        url: `/pages/product/index?id=${id}`
+      })
     }
   }
 })

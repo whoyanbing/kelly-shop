@@ -5,6 +5,7 @@
     "pages/cart/index",
     "pages/user/index",
     "pages/productList/index",
+    "pages/product/index",
     "pages/order/index"
   ],
   "entryPagePath":"pages/index/index",

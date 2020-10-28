@@ -1,0 +1,12 @@
+<view wx:for="{{productList}}" wx:key="index" class="product-list">
+  <van-swipe-cell async-close bind:close="onClose" data-index="{{index}}" right-width="{{ 65 }}">
+    <view class="product-item">
+      <image style="height:300rpx;width:260rpx;" src="{{item.image[0]}}" />
+      <view class="product-detail">
+        <view class="product-price">¥{{item.price/100}}</view>
+        <view class="product-price">x{{item.number}}</view>
+      </view>
+    </view>
+    <view class="product-del" slot="right">删除</view>
+  </van-swipe-cell>
+</view>

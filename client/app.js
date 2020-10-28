@@ -34,5 +34,7 @@ App({
     this.init()
     this.initData(e.query || 'o11IM0RV1JWDOWDwepaqBvhQDbq0')
   },
-  globalData: {}
+  globalData: {
+    shoppingCart: []
+  }
 })

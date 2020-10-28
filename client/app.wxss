@@ -1,5 +1,9 @@
 @import '/miniprogram_npm/@vant/weapp/common/index.wxss';
 
+Page {
+	background-color: #fafafa;
+}
+
 swiper {
 	height: inherit;
 }

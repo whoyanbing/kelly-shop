@@ -11,5 +11,5 @@
 }
 
 .hard-line {
-	width: 670rpx;
+	width: 630rpx;
 }
