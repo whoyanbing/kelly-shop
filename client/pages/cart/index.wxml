@@ -1,5 +1,4 @@
-<view wx:if="{{productList.length>0}}" class="container">
-  <cart-item product-list="{{productList}}"></cart-item>
-  <van-submit-bar price="{{ totalPrice }}" disabled="{{ !productList.length }}" button-text="结算" bind:submit="onSubmit"></van-submit-bar>
+<view class="container">
+  <cart-item bind:calculateTotalPrice="getTotalPrice"></cart-item>
+  <van-submit-bar wx:if="{{totalPrice > 0}}" price="{{ totalPrice }}" button-text="结算" bind:submit="onSubmit"></van-submit-bar>
 </view>
-<van-empty wx:else description="购物车空空如也~"></van-empty>

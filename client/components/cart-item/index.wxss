@@ -21,7 +21,7 @@
 }
 
 .product-del {
-	width: 160rpx;
+	width: 75px;
 	text-align: center;
 	line-height: 300rpx;
 	background-color: #ee0a24;
