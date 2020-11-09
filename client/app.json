@@ -6,9 +6,10 @@
     "pages/user/index",
     "pages/productList/index",
     "pages/product/index",
-    "pages/order/index"
+    "pages/order/index",
+    "pages/orderList/index"
   ],
-  "entryPagePath":"pages/index/index",
+  "entryPagePath": "pages/index/index",
   "window": {
     "backgroundColor": "#f5f6f7",
     "backgroundTextStyle": "light",
@@ -21,27 +22,42 @@
     "selectedColor": "#ff0000",
     "backgroundColor": "#F6F6F6",
     "borderStyle": "black",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "images/1-001.png",
-      "selectedIconPath": "images/1-002.png"
-    },{
-      "pagePath": "pages/category/index",
-      "text": "分类",
-      "iconPath": "images/2-001.png",
-      "selectedIconPath": "images/2-002.png"
-    },{
-      "pagePath": "pages/cart/index",
-      "text": "购物车",
-      "iconPath": "images/3-001.png",
-      "selectedIconPath": "images/3-002.png"
-    },{
-      "pagePath": "pages/user/index",
-      "text": "我的",
-      "iconPath": "images/4-001.png",
-      "selectedIconPath": "images/4-002.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/1-001.png",
+        "selectedIconPath": "images/1-002.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "images/2-001.png",
+        "selectedIconPath": "images/2-002.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "images/3-001.png",
+        "selectedIconPath": "images/3-002.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "images/4-001.png",
+        "selectedIconPath": "images/4-002.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-image": "@vant/weapp/image/index"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "首页",
   "usingComponents": {
     "product-item": "/components/product-item/index",
     "van-divider": "@vant/weapp/divider/index",

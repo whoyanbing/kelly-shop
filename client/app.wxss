@@ -2,6 +2,7 @@
 
 Page {
 	background-color: #fafafa;
+	font-size: 28rpx;
 }
 
 swiper {

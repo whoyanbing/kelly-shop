@@ -7,30 +7,18 @@
       <open-data type="userNickName" />
     </view>
   </view>
-  <van-row class="user-links">
-    <van-col span="6">
-      <van-icon name="pending-payment" />
-      待付款
-    </van-col>
-    <van-col span="6">
-      <van-icon info="4" name="tosend" />
-      待发货
-    </van-col>
-    <van-col span="6">
-      <van-icon name="logistics" />
-      待收货
-    </van-col>
-    <van-col span="6">
-      <van-icon name="comment-o" />
-      待评价
-    </van-col>
-  </van-row>
-  <van-cell-group class="user-group">
-    <van-cell icon="records" title="全部订单" is-link />
-  </van-cell-group>
+  <!-- <van-row class="user-links">
+    <navigator wx:for="{{menuList}}" wx:key="index" url="/pages/order/index?index={{index}}">
+      <van-col span="6">
+        <van-icon name="{{item.icon}}" />
+        {{item.label}}
+      </van-col>
+    </navigator>
+  </van-row> -->
   <van-cell-group>
-    <van-cell icon="points" title="我的积分" is-link />
-    <van-cell icon="gift-o" title="我的分销" is-link />
-    <van-cell icon="gold-coin-o" title="我的优惠券" is-link />
+    <van-cell icon="orders-o" title="我的订单" size="large" is-link url="/pages/orderList/index" />
+    <van-cell icon="cluster-o" title="我的分销" size="large" is-link />
+    <van-cell icon="home-o" title="我的地址" size="large" is-link bind:click="bindUserAddress" />
+    <van-cell icon="setting-o" title="我的设置" size="large" is-link bind:click="bindUserSetting" />
   </van-cell-group>
 </view>

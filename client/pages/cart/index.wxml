@@ -1,4 +1,4 @@
 <view class="container">
   <cart-item bind:calculateTotalPrice="getTotalPrice"></cart-item>
-  <van-submit-bar wx:if="{{totalPrice > 0}}" price="{{ totalPrice }}" button-text="结算" bind:submit="onSubmit"></van-submit-bar>
+  <van-submit-bar wx:if="{{productList.length > 0}}" price="{{ totalPrice }}" button-text="结算" bind:submit="onSubmit"></van-submit-bar>
 </view>

@@ -4,13 +4,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    
+
   },
   // 引入计算属性
   behaviors: [computedBehavior],
   // watch属性
   watch: {
-    'productList':function (productList) {
+    'productList': function (productList) {
       let totalPrice = 0
       if (productList.length > 0) {
         productList.forEach(item => {
@@ -43,7 +43,7 @@ Component({
     // 设置购物车缓存数据
     setCartData() {
       const productList = this.data.productList
-      wx.setStorageSync('cartItems',productList)
+      wx.setStorageSync('cartItems', productList)
     },
     // 删除购物车数据
     onClose(e) {
@@ -60,12 +60,12 @@ Component({
   },
   // 组件所在页面的生命周期
   pageLifetimes: {
-    show: function() {
+    show: function () {
       // 页面被展示
       // 获取购物车数据
       this.getCartData()
     },
-    hide: function() {
+    hide: function () {
       // 页面被隐藏
       // 存储购物车数据
       this.setCartData()
