@@ -1,0 +1,27 @@
+<view class="order-item">
+  <van-cell title="订单编号:23123123123" value="待发货" border="{{false}}" />
+  <van-row>
+    <van-col span="8" offset="1">
+      <van-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </van-col>
+    <van-col span="10">
+      <van-row>
+        <van-col>总价：100</van-col>
+      </van-row>
+      <van-row>
+        <van-col>优惠：0</van-col>
+      </van-row>
+      <van-row>
+        <van-col>实付款：100</van-col>
+      </van-row>
+      <van-row>
+        <van-col>
+          <van-button size="small">查看物流</van-button>
+        </van-col>
+        <van-col>
+          <van-button size="small">确认收货</van-button>
+        </van-col>
+      </van-row>
+    </van-col>
+  </van-row>
+</view>

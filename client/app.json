@@ -7,7 +7,8 @@
     "pages/productList/index",
     "pages/product/index",
     "pages/order/index",
-    "pages/orderList/index"
+    "pages/orderList/index",
+    "pages/distributor/index"
   ],
   "entryPagePath": "pages/index/index",
   "window": {

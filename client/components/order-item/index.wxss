@@ -1,0 +1,6 @@
+.order-item {
+  background-color: #fff;
+  padding: 20rpx;
+  margin: 40rpx 0;
+  border-radius: 20rpx;
+}

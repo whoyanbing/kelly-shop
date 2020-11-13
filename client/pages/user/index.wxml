@@ -16,9 +16,9 @@
     </navigator>
   </van-row> -->
   <van-cell-group>
-    <van-cell icon="orders-o" title="我的订单" size="large" is-link url="/pages/orderList/index" />
-    <van-cell icon="cluster-o" title="我的分销" size="large" is-link />
-    <van-cell icon="home-o" title="我的地址" size="large" is-link bind:click="bindUserAddress" />
-    <van-cell icon="setting-o" title="我的设置" size="large" is-link bind:click="bindUserSetting" />
+    <van-cell icon="orders-o" title="全部订单" size="large" is-link url="/pages/orderList/index" />
+    <van-cell icon="cluster-o" title="分销赚钱" size="large" is-link url="/pages/distributor/index" />
+    <van-cell icon="home-o" title="地址管理" size="large" is-link bind:click="bindUserAddress" />
+    <van-cell icon="setting-o" title="权限设置" size="large" is-link bind:click="bindUserSetting" />
   </van-cell-group>
 </view>
