@@ -3,52 +3,24 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        userAddress: null
     },
 
-    bindAddAddress() {
-        wx.getSetting({
-            success(res) {
-                if (res.authSetting['scope.address']) {
-                    console.log("111")
-                    wx.chooseAddress({
-                        success(res) {
-                            console.log(res.userName)
-                            console.log(res.postalCode)
-                            console.log(res.provinceName)
-                            console.log(res.cityName)
-                            console.log(res.countyName)
-                            console.log(res.detailInfo)
-                            console.log(res.nationalCode)
-                            console.log(res.telNumber)
-                        }
-                    })
-
-                } else {
-                    if (res.authSetting['scope.address'] == false) {
-                        console.log("222")
-                        wx.openSetting({
-                            success(res) {
-                                console.log(res.authSetting)
-
-                            }
-                        })
-                    } else {
-                        console.log("eee")
-                        wx.chooseAddress({
-                            success(res) {
-                                console.log(res.userName)
-                                console.log(res.postalCode)
-                                console.log(res.provinceName)
-                                console.log(res.cityName)
-                                console.log(res.countyName)
-                                console.log(res.detailInfo)
-                                console.log(res.nationalCode)
-                                console.log(res.telNumber)
-                            }
-                        })
-                    }
-                }
+    bindAddAddress() {  
+        const that =  this
+        wx.chooseAddress({
+            success: res => {
+                console.log(res.userName)
+                console.log(res.postalCode)
+                console.log(res.provinceName)
+                console.log(res.cityName)
+                console.log(res.countyName)
+                console.log(res.detailInfo)
+                console.log(res.nationalCode)
+                console.log(res.telNumber)
+                that.setData({
+                    userAddress: res
+                })
             }
         })
     },
